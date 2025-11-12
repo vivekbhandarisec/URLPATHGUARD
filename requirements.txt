@@ -1,0 +1,4 @@
+kafka-python
+colorama
+requests
+geoip2

@@ -1,0 +1,5 @@
+192.168.1.10 - - [20/Oct/2025:10:00:01 +0530] "GET /index.html HTTP/1.1" 200 1024 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+10.0.0.5 - - [20/Oct/2025:10:00:10 +0530] "POST /login.php HTTP/1.1" 302 512 "http://example.com" "curl/7.68.0"
+203.0.113.5 - - [20/Oct/2025:10:01:05 +0530] "GET /search?q=alert%27%20OR%201=1 HTTP/1.1" 200 2048 "-" "Mozilla/5.0 (X11; Linux x86_64)"
+198.51.100.23 - - [20/Oct/2025:10:02:15 +0530] "GET /images/logo.png HTTP/1.1" 200 4096 "-" "Googlebot/2.1 (+http://www.google.com/bot.html)"
+192.168.1.15 - - [20/Oct/2025:10:03:30 +0530] "POST /api/upload HTTP/1.1" 500 64 "http://intranet.local" "python-requests/2.28.1"
