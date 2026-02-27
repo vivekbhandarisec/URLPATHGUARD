@@ -1,7 +1,51 @@
-.\venv\Scripts\Activate.ps1  #For activating venv
+# URLPathGuard
 
-cd C:\kafka_docker  #switching to kafka_docker where the compose file is 
+URLPathGuard is a full-stack web attack detection platform with:
+- `backend`: FastAPI APIs for log parsing, attack detection, stats, and alert details
+- `frontend`: enterprise-style website + SOC dashboard for trial upload, monitoring, and triage
 
-docker-compose up -d #activating docker 
+## Prerequisites
+- Python 3.10+
+- Node.js 18+ and npm
 
-docker ps #watching live docker activated 
+## Setup
+1. Backend
+```powershell
+cd backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+2. Frontend
+```powershell
+cd frontend
+npm install
+```
+
+## Run
+From project root:
+```powershell
+.\start-dev.ps1
+```
+
+Or:
+```powershell
+dev.bat
+```
+
+Services:
+- Backend: `http://127.0.0.1:8000`
+- Frontend: `http://127.0.0.1:5173`
+
+## Core API Endpoints
+- `GET /api/alerts`
+- `GET /api/alerts/{id}`
+- `GET /api/stats`
+- `GET /api/system-status`
+- `POST /api/upload-log`
+
+## Health Check
+```powershell
+curl http://127.0.0.1:8000/health
+```
